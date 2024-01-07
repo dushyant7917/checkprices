@@ -3,6 +3,14 @@ import pandas as pd
 
 st.set_page_config(layout="wide", page_title="Check Prices", page_icon="🤑")
 
+st.markdown("""
+<style>
+#MainMenu {
+  display: none;
+}
+</style>
+""", unsafe_allow_html=True)
+
 @st.cache_data
 def get_data():
     # Read CSV file into a DataFrame
